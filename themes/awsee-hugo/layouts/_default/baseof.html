@@ -9,13 +9,13 @@
 		<meta name="description" content="{{ .Description | default .Site.Params.description }}">
 	{{- end }}
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="{{ .Site.BaseURL }}css/{{ if .Site.Params.minimal }}app.min.css{{ else }}index.css{{ end }}" />
+	<link rel="stylesheet" href="{{ .Site.BaseURL }}css/index.css" />
 	<link rel="canonical" href="{{ .Permalink }}" />
 	<link rel="alternate" type="application/rss+xml" href="{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}" title="{{ .Site.Title }}" />
 	{{- if or .Params.math .Site.Params.math }}
-		<link rel="stylesheet" href="{{ .Site.BaseURL }}css/app.min.css" />
-		<script defer src="{{ .Site.BaseURL }}js/app.min.js"></script>
-		<script defer src="{{ .Site.BaseURL }}js/icons.min.js"></script>
+		<link rel="stylesheet" href="{{ .Site.BaseURL }}x/app.min.css" />
+		<script defer src="{{ .Site.BaseURL }}x/app.min.js"></script>
+		<script defer src="{{ .Site.BaseURL }}x/icons.min.js"></script>
 	{{- end }}
 </head>
 
