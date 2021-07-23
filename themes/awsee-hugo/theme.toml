@@ -1,0 +1,12 @@
+name = "awsee"
+license = "public domain"
+licenselink = "https://github.com/username/repository/master/LICENSE.txt"
+description = "Hugo theme"
+homepage = "https://github.com/username/repository"
+tags = ["blog"]
+features = ["blog"]
+min_version = "0.0.1"
+
+[author]
+  name = "usesrname"
+  homepage = "https://github.com/username/"

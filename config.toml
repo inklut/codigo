@@ -1,0 +1,17 @@
+baseURL = "https://awsee.github.io/"
+languageCode = "es-ec"
+title = "Awsee"
+author = "Gary Avendaño Rosado"
+theme = "awsee-hugo"
+
+[params]
+  minimal = false
+  excerpts = false
+  description = "Sitio web awsee como parte del portafolio de servicios avro cuyo propietario es Gary Avendaño Rosado."
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
