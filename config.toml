@@ -11,7 +11,12 @@ theme = "awsee-hugo"
 
 [menu]
   [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
+    identifier = "servicios"
+    name = "Servicos"
+    url = "/servicios/"
+    weight = 10
+  [[menu.main]]
+    identifier = "lenguaje"
+    name = "Idiomas"
+    url = "/lenguaje/"
     weight = 10
