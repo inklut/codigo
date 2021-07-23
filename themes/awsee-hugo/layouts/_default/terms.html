@@ -2,7 +2,7 @@
 
 <main>
     <h1>{{ .Title }}</h1>
-	<div>
+	<div class="text-yellow-400">
         <ul>
         {{- range (.Paginate .Data.Pages).Pages -}}
             <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
@@ -10,7 +10,7 @@
         </ul>
 	</div>
 
-	<div>
+	<div class="text-yellow-400">
 		{{- if .Paginator.HasPrev -}}
 			<a href="{{ .Paginator.Prev.URL }}">&#8592;</a>
 		{{- end -}}

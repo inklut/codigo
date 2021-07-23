@@ -1,8 +1,6 @@
 <nav>
-	<div>
-		<a href="{{ "/" | relURL }}">
-			<h2>{{ .Site.Title }}</h2>
-		</a>
-		{{ partial "header-menu.html" . }}
-	</div>
+	<a href="{{ "/" | relURL }}">
+		<h2>{{ .Site.Title }}</h2>
+	</a>
+	{{ partial "header-menu.html" . }}
 </nav>

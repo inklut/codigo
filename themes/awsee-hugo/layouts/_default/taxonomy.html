@@ -2,13 +2,13 @@
 
 <main>
     <h1>{{ strings.FirstUpper .Data.Singular }} {{ .Title }}</h1>
-	<div>
+	<div class="text-indigo-200">
 		{{ range (.Paginate .Pages).Pages }}
 			{{ .Render "summary" }}
 		{{ end }}
 	</div>
 
-	<div>
+	<div class="text-green-200">
 		{{ if .Paginator.HasPrev }}
 			<a href="{{ .Paginator.Prev.URL }}">&#8592;</a>
 		{{ end }}

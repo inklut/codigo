@@ -1,7 +1,7 @@
-<ul>
+<ul class="flex">
     {{ $currentPage := . }}
     {{ range .Site.Menus.main }}
-        <li>
+        <li class="mx-4">
             <a href="{{ .URL }}">
                 {{ .Pre }}
                 <span>{{ .Name }}</span>

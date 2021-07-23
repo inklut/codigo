@@ -1,10 +1,6 @@
 <footer>
 	{{ if and .Params.comments (gt (len .Site.DisqusShortname) 0) }}
-	<figure>
-		{{ template "_internal/disqus.html" . }}
-	</figure>
+		<figure>{{ template "_internal/disqus.html" . }}</figure>
 	{{ end }}
-	<span>
-		&copy; <time datetime="{{ now }}">{{ now.Format "2006" }}</time> {{ .Site.Author.name }}. {{ i18n "generator" | safeHTML }}
-	</span>
+	<small class="text-gray-500">&copy; <time datetime="{{ now }}">{{ now.Format "2006" }}</time> {{ .Site.Author.name }}. {{ i18n "generator" | safeHTML }}</small>
 </footer>

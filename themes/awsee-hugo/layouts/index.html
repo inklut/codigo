@@ -2,13 +2,13 @@
 
 <main>
 	{{ partial "index/introduction.html" . }}
-	<div>
+	<div class="text-green-600">
 		{{ range (.Paginate .Site.RegularPages).Pages }}
 			{{ .Render "summary" }}
 		{{ end }}
 	</div>
 
-	<div>
+	<div class="text-green-400">
 		{{ if .Paginator.HasPrev }}
 			<a href="{{ .Paginator.Prev.URL }}">&#8592;</a>
 		{{ end }}

@@ -1,7 +1,7 @@
 {{ define "main" }}
 
 <main>
-	<div>
+	<div class="text-blue-400">
 		{{ partial "single/post-info.html" . }}
 		{{ partial "single/title.html" . }}
 		{{ partial "single/header.html" . }}
@@ -11,7 +11,7 @@
 		{{ partial "single/footer.html" . }}
 	</div>
 
-	<div>
+	<div class="text-red-400">
 		{{- if .PrevPage }}
 		<a href="{{ .PrevPage.RelPermalink }}">&#8592;</a>
 		{{- end }}
