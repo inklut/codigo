@@ -32,6 +32,8 @@
 	</header>
 	{{- block "main" . }}{{- end }}
 
+	{{ partial "footer.html" . }}
+
 	<script defer src="{{ .Site.BaseURL }}x/app.min.js"></script>
 	<script defer src="{{ .Site.BaseURL }}x/icons.min.js"></script>
 </body>
