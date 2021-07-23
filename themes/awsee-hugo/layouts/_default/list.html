@@ -24,14 +24,13 @@
 {{ else }}
 
 <article>
-
   <ul class="container mx-auto">
 	<header class="m-4">
 		<small class="text-gray-400">{{ .Title | default "Posts" | humanize }}</small>
 	</header>
     {{- range $Pages }}
     <li class="bg-gray-100 m-4 p-6 rounded-2xl border-2">
-      	<small class="text-gray-400 font-semibold">{{ if .Date }}<time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "2006-01-02" }}</time>{{ end }}</small>
+      	<small class="text-blue-600 font-semibold">{{ if .Date }}<time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "2006-01-02" }}</time>{{ end }}</small>
 		<div>
 	  		<a class="text-xl font-light text-gray-600" href="{{ .Permalink }}">{{ .Title }}</a>
 		</div>
