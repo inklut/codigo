@@ -6,3 +6,5 @@ Compilar tema:
 ```
 hugo -t awsee-hugo
 ```
+Ir a:
+https://awsee.github.io/
