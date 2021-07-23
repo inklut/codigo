@@ -14,8 +14,6 @@
 	<link rel="alternate" type="application/rss+xml" href="{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}" title="{{ .Site.Title }}" />
 	{{- if or .Params.math .Site.Params.math }}
 		<link rel="stylesheet" href="{{ .Site.BaseURL }}x/app.min.css" />
-		<script defer src="{{ .Site.BaseURL }}x/app.min.js"></script>
-		<script defer src="{{ .Site.BaseURL }}x/icons.min.js"></script>
 	{{- end }}
 </head>
 
@@ -33,6 +31,9 @@
 	  {{ end }}
 	</header>
 	{{- block "main" . }}{{- end }}
+
+	<script defer src="{{ .Site.BaseURL }}x/app.min.js"></script>
+	<script defer src="{{ .Site.BaseURL }}x/icons.min.js"></script>
 </body>
 
 </html>

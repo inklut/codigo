@@ -16,7 +16,7 @@
   </header>
   {{ .Summary }}
   {{- if .Truncated }}
-    <div class="more"><a href="{{ .RelPermalink }}">read more</a></div>
+    <div><a href="{{ .RelPermalink }}">Leer más</a></div>
   {{- end }}
 </article>
 {{- end }}
@@ -24,8 +24,11 @@
 {{ else }}
 
 <article>
-  <header><h1>{{ .Title | default "Posts" | humanize }}</h1></header>
+
   <ul class="container mx-auto">
+	<header class="m-4">
+		<small class="text-gray-400">{{ .Title | default "Posts" | humanize }}</small>
+	</header>
     {{- range $Pages }}
     <li class="bg-gray-100 m-4 p-6 rounded-2xl border-2">
       	<small class="text-gray-400 font-semibold">{{ if .Date }}<time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "2006-01-02" }}</time>{{ end }}</small>
