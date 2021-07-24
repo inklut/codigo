@@ -3,8 +3,8 @@ license = "public domain"
 licenselink = "https://github.com/username/repository/master/LICENSE.txt"
 description = "Hugo theme"
 homepage = "https://github.com/username/repository"
-tags = ["awsee", "minimal", "clean", "responsive", "simple", "personal", "blog", "starter", "light", "typography"]
-features = ["pagination"]
+tags = ["blog"]
+features = ["blog"]
 min_version = "0.0.1"
 
 [author]
